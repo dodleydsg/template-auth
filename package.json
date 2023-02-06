@@ -1,0 +1,19 @@
+{
+  "name": "template-auth",
+  "version": "1.0.0",
+  "description": "An authentication backend for github.com/dodleydsg web projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodleydsg/template-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dodleydsg/template-auth/issues"
+  },
+  "homepage": "https://github.com/dodleydsg/template-auth#readme"
+}
