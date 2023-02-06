@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/dodleydsg/template-auth/issues"
   },
-  "homepage": "https://github.com/dodleydsg/template-auth#readme"
+  "homepage": "https://github.com/dodleydsg/template-auth#readme",
+  "dependencies": {
+    "mongoose": "^6.9.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.9.0"
+  }
 }

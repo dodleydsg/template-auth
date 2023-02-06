@@ -1,8 +1,14 @@
-import Db from "./db/index";
+const Db = require("./db/index");
+const TYPES = require("./types");
 
-export default class Auth {
+class Auth {
   constructor(obj) {
-    this.db = new Db(obj.connectionObject, obj.authModel, obj.authFields);
+    this.db = new Db(
+      obj.connectionObject,
+      obj.authModel,
+      obj.authFields,
+      obj.type
+    );
   }
 
   async login(req, res, next) {
@@ -19,3 +25,8 @@ export default class Auth {
     // Register user into database and return appropriate message
   }
 }
+
+module.exports = {
+  default: Auth,
+  Types,
+};
