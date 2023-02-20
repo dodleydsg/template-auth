@@ -21,7 +21,7 @@ app.get("/", (req, res, next) => {
 // Login page
 
 app.get("/login", (req, res, next) => {
-  res.render("login");
+  res.render("login", { page: "Login" });
 });
 
 // Reset password page
