@@ -1,9 +1,12 @@
+require("dotenv").config();
 const express = require("express"),
   mongoose = require("mongoose"),
   logger = require("morgan"),
   path = require("path"),
-  plugin = require("./plugin"),
+  { connect } = require("./plugin"),
   TYPES = require("../types/index");
+
+console.log(process.env);
 
 app = express();
 app.use(logger("dev"));
@@ -70,6 +73,9 @@ app.get("/reset_password_confirm", (req, res, next) => {
 // Reset password done page
 
 app.listen(5000, () => {
-  plugin.connect(TYPES.MONGOOSE);
+  // mongoose connection
+  // connect(TYPES.MONGOOSE);
+  connect(TYPES.MONGODB);
+
   console.log("Listening top port 5000");
 });

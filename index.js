@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Db = require("./db/index");
 const TYPES = require("./types");
 
