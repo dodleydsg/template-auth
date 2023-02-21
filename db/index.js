@@ -8,7 +8,7 @@ MySQL NodeJS connector
 
 */
 
-export default class Db {
+class Db {
   constructor(obj) {
     this.type = obj.type;
     switch (this.type) {
@@ -28,7 +28,7 @@ export default class Db {
         return;
 
       case TYPES.PRISMA:
-        const mongoose = require("prisma");
+        const prisma = require("prisma");
         return;
     }
   }

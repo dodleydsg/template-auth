@@ -28,5 +28,5 @@ class Auth {
 
 module.exports = {
   default: Auth,
-  Types,
+  TYPES,
 };
